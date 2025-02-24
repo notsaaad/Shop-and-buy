@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="site-name">SHOP AND BUY</h1>
+          <div class="header-right-side">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-regular fa-moon"></i>
+            <a class="header-profile" href="#"><i class="fa-solid fa-user-large"></i></a>
+          </div>
+        </header>
+          <div class="title">
+        <h1>Products Management</h1>
+          </div>
+        <div class="buttons">
+          <button class="btn add-product">
+            <h3>Add new product </h3><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <button class="btn export-csv">
+            <h3> Export CSV</h3> <span class="icon"><i class="fa-solid fa-file-export"></i></span>
+          </button>
+        </div>
+        <div class="product">
+          <p>
+            <div class="taxonmies-div-title">Products:</div>
+            <div class="taxonmies">
+              <div class="single-tax">
+                <span class="tax-name">
+                  <a class="link" href="#">All</a>
+                </span>
+                <span class="tax-count">(16)</span>
+                <div class="tax-sperator">|</div>
+              </div>
+              <div class="single-tax">
+                <span class="tax-name">
+                  <a class="link" href="#">Published</a>
+                </span>
+                <span class="tax-count">(7)</span>
+                <div class="tax-sperator">|</div>
+              </div>
+              <div class="single-tax">
+                <span class="tax-name">
+                  <a class="link" href="#">Drafts</a>
+                </span>
+                <span class="tax-count">(5)</span>
+                <div class="tax-sperator">|</div>
+              </div>
+              <div class="single-tax">
+                <span class="tax-name">
+                  <a class="link" href="#">Trash</a>
+                </span>
+                <span class="tax-count">(4)</span>
+              </div>
+            </div>
+        </div>
+        <div class="Dropdown_seciton">
+        <div class="dropdown">
+          <button class="btn btn dropdown-toggle text-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="link" class="dropdown-item" href="#">Action</a></li>
+            <li><a class="link" class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="link" class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn  dropdown-toggle text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="link" class="dropdown-item" href="#">Action</a></li>
+            <li><a class="link" class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="link" class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn dropdown-toggle text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="link" class="dropdown-item" href="#">Action</a></li>
+            <li><a class="link" class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="link" class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <button class="apply-btn">Apply <i class="fa-solid fa-chevron-right"></i></button>
+        <button class="clear-btn">Clear</button>
+      </div>
+    <section class="table_titil">
+      <h1>View Products:8/16</h1>
+      <div class="outputs">
+        <div class="search_block">
+          <input type="text" class="search"placeholder="Search Product"
+          onkeyup="SearchTable(this)">
+        </div>
+      </div>
+    </section>
+    <main class="table">
+  <section class="table_body">
+    <table class="table_header">
+      <thead>
+        <tr class="design_header">
+          <th> <i class="fa-regular fa-square"></i></th>
+          <th ><i class="fa-regular fa-image" ></i></th>
+          <th>Product Name</th>
+          <th>SKU</th>
+          <th>Stock</th> 
+          <th>Price</th>
+          <th>CATEGORY</th>
+          <th>Tags</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th> <i class="fa-regular fa-square" style="font-size: 15px; border: 1px; color: #4da6ff;"></i></th>
+          <td><img class="imge_product" src="imges/products/product_1.webp" alt=""></td>
+          <td class="product_name_design">xiaomi Wifi <br>Repeater Pro</td>
+          <td class="SKU_font">TR-001</td>
+          <td><span class="in_Stock">in stock</span><span class="number_product">(120)</span></td>
+          <td><span class="Price">$254.00</span></td>
+          <td><span class="CATEGORY">Electronice</span></td>
+          <td><span class="Tags">Top Rated,<br>Best Selier,<br>Phone</span></td>
+          <td><span class="Actions"><a class="link" href="#" ><i class="fa-solid fa-file-pen"></i></a> <a class="link" href="#" ><i id="Trash" class="fa-solid fa-trash-can"></i></span></td>
+        </tr>
+        <tr>
+          <th> <i class="fa-regular fa-square" style="font-size: 15px; border: 1px; color: #4da6ff;"></i></th>
+          <td><img  class="imge_product" src="imges/products/product_2.webp" alt=""></td>
+          <td class="product_name_design">samsung note 10</td>
+          <td class="SKU_font">TR-001</td>
+          <td> <span class="Low_Inventory">Low Inventory</span><br><span class="number_product">(3)</span></td>
+          <td><span class="Price">$254.00</span></td>
+          <td><span class="CATEGORY">Electronice</span></td>
+          <td><span class="Tags">-</span></td>
+          <td><span class="Actions"><a class="link" href="#" ><i class="fa-solid fa-file-pen"></i></a> <a class="link" href="#" ><i id="Trash" class="fa-solid fa-trash-can"></i></span></td>
+        </tr>
+        <tr>
+          <th> <i class="fa-regular fa-square" style="font-size: 15px; border: 1px; color: #4da6ff;"></i></th>
+          <td><img  class="imge_product" src="imges/products/product_3.webp" alt=""></td>
+          <td  class="product_name_design">samsung note 20</td>
+          <td class="SKU_font">TR-001</td>
+          <td><span class="out_of_Stock">out of Stock</span><br><span class="number_product">(0)</span></td>
+          <td><span class="Price">$254.00</span></td>
+          <td><span class="CATEGORY">Electronice</span></td>
+          <td><span class="Tags">-</span></td>
+          <td><span class="Actions"><a class="link" href="#" ><i class="fa-solid fa-file-pen"></i></a> <a class="link" href="#" ><i id="Trash" class="fa-solid fa-trash-can"></i></span></td>
+        </tr>
+        <tr>
+          <th> <i class="fa-regular fa-square" style="font-size: 15px; border: 1px; color: #4da6ff;"></i></th>
+          <td><img  class="imge_product" src="imges/products/product_4.webp" alt=""></td>
+          <td  class="product_name_design">iphone s6</td>
+          <td class="SKU_font">TR-001</td>
+          <td><span class="On_Demand">On Demand</span></td>
+          <td><span class="Price">$254.00</span></td>
+          <td><span class="CATEGORY">Electronice</span></td>
+          <td><span class="Tags">Top Rated,<br>Best Selier,<br>Phone</span></td>
+          <td><span class="Actions"><a class="link" href="#" ><i class="fa-solid fa-file-pen"></i></a> <a class="link" href="#" ><i id="Trash" class="fa-solid fa-trash-can"></i></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

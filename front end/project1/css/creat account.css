@@ -1,0 +1,166 @@
+:root{
+    --primary-color:white;
+    --sec-color: #0046be;
+    --main-font:Arial, sans-serif;
+}
+body {
+    font-family: var(--main-font);
+    background-color:rgb(204, 199, 199);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.navbar {
+    background:var(--sec-color) ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    background-color: yellow;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+
+.navbar a {
+    color:var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+
+.container {
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid black;
+    margin: 10px 0;
+    padding-right: 0.5%;
+    padding-left: 1px;
+}
+
+
+input::placeholder {
+    color:black;
+    font-size: 15px;
+}
+
+
+input:invalid {
+   
+    background-color: #ffe6e6;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+
+button {
+    background:var(--sec-color) ;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+
+.or-section {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+
+.google-btn {
+    background:var(--primary-color);
+    color: #444;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.google-btn:hover {
+    background: #f1f1f1;
+}
+
+
+.google-icon {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    color: #ea4335;
+}
+
+
+.signin-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+.signin-text a {
+    color:var(--sec-color);
+    text-decoration: none;
+}
+
+.signin-text a:hover {
+    text-decoration: underline;
+}

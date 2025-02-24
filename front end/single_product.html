@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/single_product.css">
+    <title>product page</title>
+   
+    
+</head>
+<body>
+
+      <!-- ================================================== Start Header ==================================================== -->
+      <div class="aside-overlay">
+        <button class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <header class="header">
+          <div class="main-header-content">
+            <div class="logo"><b>S&B</b></div>
+            <button class="menu-button" id="menuButton">
+                <span class="menu-icon"></span> Menu 
+            </button>
+    
+            <div class="search-bar-container">
+                <input type="text" placeholder="What can we help you find today?" class="search-bar">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+    
+            <div class="header-icons">
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="navbar">
+            <a class="links" href="#">Top Deals</a>
+            <a class="links" href="#">Deal of the Day</a>
+            <a class="links" href="#">Yes, Best Buy Sells That</a>
+            <a class="links" href="#">My Best Buy Memberships</a>
+            <a class="links" href="#">Credit Cards</a>
+    
+            <div class="dropdown">
+              <a class="links" href="">MORE &#9662;</a>
+              <div class="dropdown-content">
+                  <a href="#"> option 1</a>
+                  <a href="#"> option 1</a>
+                  <a href="#">option  3</a>
+              </div>
+          </div>
+    
+          <div class="dropdown">
+            <a class="links" href="">account &#9662;</a>
+            <div class="dropdown-content">
+              <a href="#">option 1</a>
+              <a href="#">option 2</a>
+              <a href="#">option 3</a>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+          <a class="links" href="">order status &#9662;</a>
+          <div class="dropdown-content">
+            <a href="#">option 1</a>
+            <a href="#">option 2</a>
+            <a href="#">option 3</a>
+          </div>
+      </div>
+    
+      <div class="dropdown">
+        <a class="links" href="">saved items &#9662;</a>
+        <div class="dropdown-content">
+          <a href="#">option 1</a>
+          <a href="#">option 2</a>
+          <a href="#">option 3</a>
+        </div>
+    </div>
+    
+        
+    
+    
+  
+        </div>
+        <div class="sidebar" id="sidebar">
+          <div class="menu-section">
+            <h4>Shop by Department</h4>
+            <div class="DropDown">
+              <a class="menu-item" href="#">Appliances</a>
+              <div class="submenu">
+                <a class="menu-item" href="#">Link 1</a>
+                <a class="menu-item" href="#">Link 2</a>
+                <a class="menu-item" href="#">Link 3</a>
+              </div>
+            </div>
+  
+            <a href="#" class="menu-item">TV & Home Theater</a>
+            <a href="#" class="menu-item">Computers & Tablets</a>
+            <a href="#" class="menu-item">Cell Phones</a>
+            <a href="#" class="menu-item">Audio</a>
+            <a href="#" class="menu-item">Video Games</a>
+          </div>
+          <div class="menu-section">
+            <h4>Deals</h4>
+            <a href="#" class="menu-item">View All Deals</a>
+          </div>
+          <div class="menu-section">
+            <h4>Support & Services</h4>
+            <a href="#" class="menu-item">Customer Support</a>
+            <a href="#" class="menu-item">Repair Services</a>
+          </div>
+          <div class="menu-section">
+            <h4>Brands</h4>
+            <a href="#" class="menu-item">Top Brands</a>
+          </div>
+        </div>
+      </header>
+    <!-- ================================================== End Header ==================================================== -->
+
+
+    <div class="container">
+       
+        <div class="product-section">
+            <div class="small-images">
+                <img src="images/download.jpg" alt="صورة صغيرة" class="thumbnail" onclick="changeImage('images/download.jpg')">
+                <img src="images/download2.jpg" alt="صورة صغيرة" class="thumbnail" onclick="changeImage('images/download2.jpg')">
+                <img src="images/download3.jpg" alt="صورة صغيرة" class="thumbnail" onclick="changeImage('images/download3.jpg')">
+            </div>
+            <div class="main-image">
+                <img id="mainImage" src="images/download.jpg" alt="صورة المنتج">
+            </div>
+        </div>
+        
+       
+        <div class="info-section">
+            <span class="brand">Microsoft</span>
+            <h2>Microsoft-Surface 65W Power Supply - Black</h2>
+            <p class="model-info">Model: XYZ123 | SKU: 456789</p>
+            <div class="ratings">
+                <span class="stars">⭐⭐⭐⭐☆</span> <span>4.6 (9,287 Reviews)</span>
+            </div>
+            <p class="price">$72.99</p>
+            <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-top row">
+          <div class="footer-section col-sm-12 col-md-6 col-lg-3">
+            <div class="icon">
+              <i class="fa-solid fa-question"></i>
+            </div> 
+            <a href= "#" class="link">Visit our Support Center</a>
+          </div>
+          <div class="footer-section col-sm-12 col-md-6 col-lg-3">
+            <div class="icon">
+              <i class="fa-solid fa-box"></i>
+            </div> 
+            <a href="#" class="link">Check your Order Status</a>
+          </div>
+          <div class="footer-section col-sm-12 col-md-6 col-lg-3">
+            <div class="icon">
+              <i class="fa-solid fa-right-left"></i>
+            </div>
+            <a href="#" class="link">Returns & Exchanges</a>
+          </div>
+          <div class="footer-section col-sm-12 col-md-6 col-lg-3">
+            <div class="icon">
+              <i class="fa-solid fa-dollar-sign"></i></div>
+              <a href="#" class="link">Price Match Guarantee</a>
+          </div>
+        </div> 
+        <!-- End Footer Top -->
+        <hr>
+      
+        <div class="footer-bottom row">
+          <div class="footer-column col-sm-12 col-md-6 col-lg-3">
+            <h4>Order & Purchases</h4>
+            <ul>
+              <li><a href="#">Check Order Status</a></li>
+              <li><a href="#">Shipping, Delivery & Pickup</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Price Match Guarantee</a></li>
+              <li><a href="#">Product Recalls</a></li>
+              <li><a href="#">Trade-in Program</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="footer-column col-sm-12 col-md-6 col-lg-3">
+            <h4>Support & Services</h4>
+            <ul>
+              <li><a href="#">Visit our Support Center</a></li>
+              <li><a href="#">Contact with an Expert</a></li>
+              <li><a href="#">Schedule a Service</a></li>
+              <li><a href="#">Manage an Appointment</a></li>
+              <li><a href="#">Protection & Support Plans</a></li>
+              <li><a href="#">Haul Away & Recycling</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column col-sm-12 col-md-6 col-lg-3">
+            <h4>About Best Buy</h4>
+            <ul>
+              <li><a href="#">corporate information</a></li>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">corporate responsibility</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column col-sm-12 col-md-6 col-lg-3  footer-Email">
+            <span class="footer-sgin-in"><a href="#">Sign in or Create Account</a></span>
+            <hr>
+            <div class="form-footer-container">
+              <h4>Get the latest deals</h4>
+              <input type="email" placeholder="Enter email address" />
+              <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <hr>
+            <div class="social-icon">
+              <div class="iicon">
+                <a href="#" class=""><i class="fa-brands fa-youtube"></i></a>
+              </div> 
+              <div class="iicon">
+                <a href="#" class=""><i class="fa-brands fa-instagram"></i></a>
+              </div> 
+              <div class="iicon">
+                <a href="#" class=""><i class="fa-brands fa-tiktok"></i></a>
+              </div> 
+              <div class="iicon">
+                <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+              </div> 
+              <div class="iicon">
+                <a href="#" class=""><i class="fa-brands fa-pinterest"></i></a>
+              </div> 
+              <div class="iicon">
+                <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+              </div> 
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script-product.js"></script>
+</body>
+</html>
