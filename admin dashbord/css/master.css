@@ -69,6 +69,12 @@ a:hover::before{
    content: unset;
 }
 
+.main{
+   display: flex;
+}
+.main-content{
+   width: calc(100%  - 350px);
+}
 
 .site-name{
    font-weight: bold;
@@ -201,6 +207,7 @@ button[type="submit"]{
    transform: translate(-50%, -50%);
    color: var(--link-color);
    font-size: 16px;
+   cursor: pointer;
 }
 .title{
    height: 90px;
@@ -310,14 +317,14 @@ h3{
 /*================================================ titel =============================================*/
 .table_titil{
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    margin-right: 60px;
 }
 .table_titil h1{
    font-family: sans-serif;
    font-size: 20px;
-   margin-right: 66%;
+   /* margin-right: 66%; */
 }
 main.table{
    box-sizing: border-box;
@@ -453,7 +460,6 @@ table,th,td{
    /* overflow-y: scroll; */
    padding: 20px;
    background-color: var(--dark-bg-blue);
-   position: fixed;
    
 }
 

@@ -1,37 +1,16 @@
 
 
-h2 {
-    margin-bottom: 20px;
+.main-content{
+    background-color: #f7f7f7;
 }
 
+.form-container{
+    background-color: white;
+}
 .input-group {
     margin-bottom: 15px;
     position: relative;
 }
-/* 
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    border: 1px solid black;
-    margin: 10px 0;
-    padding-right: 0.5%;
-    padding-left: 1px;
-}
-
-
-input::placeholder {
-    color:black;
-    font-size: 15px;
-}
-
-
-input:invalid {
-   
-    background-color: #ffe6e6;
-} */
 
 
 .error-message {
@@ -42,8 +21,7 @@ input:invalid {
 }
 
 
-button {
-    background:var(--sec-color) ;
+.form-container button {
     color: white;
     border: none;
     padding: 10px;

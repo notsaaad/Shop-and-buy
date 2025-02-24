@@ -110,7 +110,7 @@
   .apply-btn {
     background-color: var(--link-color);
     height: 80%;
-    width: 10%;
+
     color: #ffffff;
     border-radius: 30px;
     padding: 10px;
@@ -125,7 +125,7 @@
     background-color: #060e20;
     border: none;
     height: 80%;
-    width: 10%;
+
     color:var(--font-btn-white);
     border-radius: 30px;
     padding: 10px;

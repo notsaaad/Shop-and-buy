@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>إنشاء حساب</title>
+		<title>new Account</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 		<link rel="stylesheet" href="css/all.css">
@@ -13,153 +13,160 @@
 	</head>
 	<body>
 
-		  <!-- ================================================== Start Header ==================================================== -->
-			<div class="aside-overlay">
-				<button class="close">
-					<i class="fa-solid fa-xmark"></i>
-				</button>
-			</div>
-			<header class="header">
-					<div class="main-header-content">
-						<div class="logo"><b>S&B</b></div>
-						<button class="menu-button" id="menuButton">
-								<span class="menu-icon"></span> Menu 
-						</button>
-		
-						<div class="search-bar-container">
-								<input type="text" placeholder="What can we help you find today?" class="search-bar">
-								<button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
-						</div>
-		
-						<div class="header-icons">
-								<div class="cart">
-										<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      <!-- ================================================== Start Header ==================================================== -->
+      <div class="aside-overlay">
+        <button class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <header class="header">
+          <div class="main-header-content">
+            <div class="logo"><b>S&B</b></div>
+            <button class="menu-button" id="menuButton">
+                <span class="menu-icon"></span> Menu 
+            </button>
+    
+            <div class="search-bar-container">
+                <input type="text" placeholder="What can we help you find today?" class="search-bar">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+    
+            <div class="header-icons">
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="navbar">
+            <a class="links" href="#">Top Deals</a>
+            <a class="links" href="#">Deal of the Day</a>
+            <a class="links" href="#">Yes, Best Buy Sells That</a>
+            <a class="links" href="#">My Best Buy Memberships</a>
+
+    
+            <div class="dropdown">
+              <a class="links" href="">MORE &#9662;</a>
+              <div class="dropdown-content">
+                  <a href="#"> option 1</a>
+                  <a href="#"> option 1</a>
+                  <a href="#">option  3</a>
+              </div>
+          </div>
+    
+          <div class="dropdown">
+            <a class="links" href="">account &#9662;</a>
+            <div class="dropdown-content">
+              <a href="#">option 1</a>
+              <a href="#">option 2</a>
+              <a href="#">option 3</a>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+          <a class="links" href="">order status &#9662;</a>
+          <div class="dropdown-content">
+            <a href="#">option 1</a>
+            <a href="#">option 2</a>
+            <a href="#">option 3</a>
+          </div>
+      </div>
+    
+      <div class="dropdown">
+        <a class="links" href="">saved items &#9662;</a>
+        <div class="dropdown-content">
+          <a href="#">option 1</a>
+          <a href="#">option 2</a>
+          <a href="#">option 3</a>
+        </div>
+    </div>
+    
+        
+    
+    
+  
+        </div>
+
+      </header>
+      <div class="sidebar" id="sidebar">
+        <div class="menu-section">
+          <h4>Shop by Department</h4>
+          <div class="DropDown">
+            <a class="menu-item" href="#">Appliances</a>
+            <div class="submenu">
+              <a class="menu-item" href="#">Link 1</a>
+              <a class="menu-item" href="#">Link 2</a>
+              <a class="menu-item" href="#">Link 3</a>
+            </div>
+          </div>
+
+          <a href="#" class="menu-item">TV & Home Theater</a>
+          <a href="#" class="menu-item">Computers & Tablets</a>
+          <a href="#" class="menu-item">Cell Phones</a>
+          <a href="#" class="menu-item">Audio</a>
+          <a href="#" class="menu-item">Video Games</a>
+        </div>
+        <div class="menu-section">
+          <h4>Deals</h4>
+          <a href="#" class="menu-item">View All Deals</a>
+        </div>
+        <div class="menu-section">
+          <h4>Support & Services</h4>
+          <a href="#" class="menu-item">Customer Support</a>
+          <a href="#" class="menu-item">Repair Services</a>
+        </div>
+        <div class="menu-section">
+          <h4>Brands</h4>
+          <a href="#" class="menu-item">Top Brands</a>
+        </div>
+      </div>
+    <!-- ================================================== End Header ==================================================== -->
+
+			<div class="main-content">
+				<div class="container">
+					<div class="form-container">
+						<h2 class="form-title">Create an Account</h2>
+						<form >
+								<div class="input-group">
+										<input  class="form-control" type="text" name="first-name" placeholder="First Name" required>
+										<p class="error-message">⚠ Please enter your first name.</p>
 								</div>
-						</div>
-					</div>
-					<div class="navbar">
-						<a class="links" href="#">Top Deals</a>
-						<a class="links" href="#">Deal of the Day</a>
-						<a class="links" href="#">Yes, Best Buy Sells That</a>
-						<a class="links" href="#">My Best Buy Memberships</a>
-						<a class="links" href="#">Credit Cards</a>
 		
-						<div class="dropdown">
-							<a class="links" href="">MORE &#9662;</a>
-							<div class="dropdown-content">
-									<a href="#"> option 1</a>
-									<a href="#"> option 1</a>
-									<a href="#">option  3</a>
-							</div>
-					</div>
+								<div class="input-group">
+										<input  class="form-control" type="text" name="last-name" placeholder="Last Name" required>
+								</div>
 		
-					<div class="dropdown">
-						<a class="links" href="">account &#9662;</a>
-						<div class="dropdown-content">
-							<a href="#">option 1</a>
-							<a href="#">option 2</a>
-							<a href="#">option 3</a>
-						</div>
+								<div class="input-group">
+										<input  class="form-control" type="email" name="email" placeholder="Email Address" required>
+								</div>
+		
+								<div class="input-group">
+									<div class="password-with-icon">
+										<input type="password" class="form-control"  id="Password" class="password" name="Password" placeholder="Your Password">
+									</div>
+										
+								</div>
+		
+								<div class="input-group ">
+										<div class="password-with-icon">
+											<input  class="form-control" type="password" name="confirm-password" placeholder="Confirm Password" required>
+										</div>
+										
+								</div>
+		
+								<div class="input-group">
+										<input  class="form-control" type="tel" name="phone" placeholder="Mobile Phone Number" required>
+										<p class="error-message">⚠ Please enter a valid phone number.</p>
+								</div>
+		
+								<button class="btn btn-primary" type="submit">Create an Account</button>
+		
+								<div class="or-section">or</div>
+		
+								<p class="signin-text">Already have an account? <a href="#">Sign in</a></p>
+						</form>
+					</div>
 				</div>
-		
-				<div class="dropdown">
-					<a class="links" href="">order status &#9662;</a>
-					<div class="dropdown-content">
-						<a href="#">option 1</a>
-						<a href="#">option 2</a>
-						<a href="#">option 3</a>
-					</div>
 			</div>
-		
-			<div class="dropdown">
-				<a class="links" href="">saved items &#9662;</a>
-				<div class="dropdown-content">
-					<a href="#">option 1</a>
-					<a href="#">option 2</a>
-					<a href="#">option 3</a>
-				</div>
-		</div>
-		
-				
-		
-		
-	
-				</div>
-				<div class="sidebar" id="sidebar">
-					<div class="menu-section">
-						<h4>Shop by Department</h4>
-						<div class="DropDown">
-							<a class="menu-item" href="#">Appliances</a>
-							<div class="submenu">
-								<a class="menu-item" href="#">Link 1</a>
-								<a class="menu-item" href="#">Link 2</a>
-								<a class="menu-item" href="#">Link 3</a>
-							</div>
-						</div>
-	
-						<a href="#" class="menu-item">TV & Home Theater</a>
-						<a href="#" class="menu-item">Computers & Tablets</a>
-						<a href="#" class="menu-item">Cell Phones</a>
-						<a href="#" class="menu-item">Audio</a>
-						<a href="#" class="menu-item">Video Games</a>
-					</div>
-					<div class="menu-section">
-						<h4>Deals</h4>
-						<a href="#" class="menu-item">View All Deals</a>
-					</div>
-					<div class="menu-section">
-						<h4>Support & Services</h4>
-						<a href="#" class="menu-item">Customer Support</a>
-						<a href="#" class="menu-item">Repair Services</a>
-					</div>
-					<div class="menu-section">
-						<h4>Brands</h4>
-						<a href="#" class="menu-item">Top Brands</a>
-					</div>
-				</div>
-			</header>
-		<!-- ================================================== End Header ==================================================== -->
-
-		<div class="container">
-			<div class="form-container">
-				<h2 class="form-title">Create an Account</h2>
-				<form >
-						<div class="input-group">
-								<input  class="form-control" type="text" name="first-name" placeholder="First Name" required>
-								<p class="error-message">⚠ Please enter your first name.</p>
-						</div>
-
-						<div class="input-group">
-								<input  class="form-control" type="text" name="last-name" placeholder="Last Name" required>
-						</div>
-
-						<div class="input-group">
-								<input  class="form-control" type="email" name="email" placeholder="Email Address" required>
-						</div>
-
-						<div class="input-group">
-								<input  class="form-control" type="password" name="password" placeholder="Password" required>
-								
-						</div>
-
-						<div class="input-group ">
-								<input  class="form-control" type="password" name="confirm-password" placeholder="Confirm Password" required>
-								
-						</div>
-
-						<div class="input-group">
-								<input  class="form-control" type="tel" name="phone" placeholder="Mobile Phone Number" required>
-								<p class="error-message">⚠ Please enter a valid phone number.</p>
-						</div>
-
-						<button class="btn btn-primary" type="submit">Create an Account</button>
-
-						<div class="or-section">or</div>
-
-						<p class="signin-text">Already have an account? <a href="#">Sign in</a></p>
-				</form>
-			</div>
-		</div>
 
 		<footer>
 			<div class="footer-top row">
