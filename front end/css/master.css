@@ -47,7 +47,7 @@ a:hover{
 }
 .aside-overlay .close{
   position: fixed;
-  top: 130px;
+  top: 40px;
   right: 20px;
   cursor: pointer;
   background: white;
@@ -61,11 +61,11 @@ a:hover{
   font-weight: bold;
   z-index: 400;
 }
-@media screen and (max-width:500px){
+/* @media screen and (max-width:500px){
   .aside-overlay .close{
     top: 20px;
   }
-}
+} */
 .header {
   display: flex;
   justify-content: space-between;
