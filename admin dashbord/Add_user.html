@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin | Add User</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/orders.css">
-    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/user.css">
 </head>
   <body>
-    <div class="container">
+    <div class="container" >
       <header class="header">
         <h1 class="site-name">SHOP AND BUY</h1>
           <div class="header-right-side">
@@ -21,15 +21,58 @@
             <a class="header-profile" href="#"><i class="fa-solid fa-user-large"></i></a>
           </div>
         </header>
-          <div class="title">
-        <h1>Product Editor</h1>
-          </div>
+        <main class="titel_form">
+          <h1>Add New User</h1>
+          <p>Create a brand new user and add them to this site</p>
         </div>
-          <main class="Editor">
-            <div class="from">
-              
+    <div class="only-form">
+        <form  action="GET" class="add_user">
+          <div class="two-input">
+            <div class="input-div w-half">
+              <label for="Username" class="riq">Username</label>
+              <input type="text" id="Username" name="Username" placeholder="Username">
             </div>
-          </main>
+            <div class="input-div w-half">
+              <label for="E-mail" class="riq">E-mail</label>
+              <input type="text" id="E-mail" name="E-mail" placeholder="Your E-mail address">
+            </div>
+          </div>
+          <div class="two-input">
+            <div class="input-div">
+              <label for="First_Name" class="riq">First Name</label>
+              <input type="text" id="First_Name" name="First_Name" placeholder="First Name">
+            </div>
+            <div class="input-div">
+              <label for="Last_name" class="riq">Last Name</label>
+              <input type="text" id="Last_name" name="Last_name" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="two-input">
+            <div class="input-div">
+              <label for="Password" class="riq">Password</label>
+              <div class="password-with-icon">
+                <input type="password" id="Password" class="password" name="Password" placeholder="Your Password">
+              </div>
+            </div>
+            <div class="input-div">
+              <label for="Password" class="riq">Confirm Password</label>
+              <div class="password-with-icon">
+                <input type="password" id="Password" class="password" name="Password" placeholder=" Confirm Your Password">
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <label for="role" class="riq">Role</label>
+            <select name="role" >
+              <option value="customer">Customer</option>
+              <option value="editor">Editor</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <button type="submit" >Add Product</button>
+        </form>
+
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
