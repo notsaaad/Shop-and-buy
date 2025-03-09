@@ -56,4 +56,42 @@ $(document).ready(function(){
   })
 }); 
 
+//uploder
+window.addEventListener("load",()=>{
+  document.addEventListener('DOMContentLoaded', () => {
+  const input = document.querySelector('.fileInput'); 
+  const filewrapper = document.querySelector('.filewrapper'); 
+  if (input && filewrapper) {
+      input.addEventListener('change', (e) => {
+          console.log('File selected:', e.target.files);
+      });
+  } else {
+      console.error('Input or filewrapper element not found!');
+  }
+});
+  const fileshow=(filename,filetype)=>{
+    const ShowfileboxElem=document.createElement("div");
+    ShowfileboxElem.classList.add("showfilebox");
+    const leftElem=document.createElement("div");
+    leftElem.classList.add("left");
+    const filetypeElem =document.createElement("span");
+    filetypeElem.classList.add("filetype");
+    filetypeElem.innerHTML=filetype;
+    leftElem.append(filetypeElem);
+    const filetitleElem=document.createElement("h3");
+    filetitleElem.innerHTML=filename;
+    leftelem.append(filetitleElem);
+    Showfileboxelem.append (leftelem);
+    const rightElem =document.createElement("div");
+    rightElem.classList.add("right");
+    ShowfileboxElem.append(rightElem);
+    const crossElem =document.createElement("span")
+    crossElem.innerHTML="&#215;";
+    rightElem.append(crossElem);
+    filewrapper.append(ShowfileboxElem);
 
+    crossElem.addEventListener("click",()=>{
+      filewrapper.removeChild(ShowfileboxElem);
+    })
+  }
+})
